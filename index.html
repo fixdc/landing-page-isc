@@ -1,1016 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ISC | Informatics Study Club</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <script src="./assets/js/index.js"></script>
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/img/icon/isc192.png"
-      type="image/x-icon"
-    />
-    <!-- CDN Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- CDN Swiper CSS -->
-    <link
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
-    <!-- CDN Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  </head>
-  <body class="bg-gray-50">
-    <!-- Header Section -->
-    <header class="bg-white shadow fixed top-0 left-0 w-full z-50">
-      <div
-        class="container mx-auto flex items-center justify-between py-2 px-6 relative"
-      >
-        <!-- Logo and Title Container -->
-        <a href="/">
-          <div class="flex items-center space-x-2">
-            <img
-              loading="lazy"
-              src="./assets/img/icon/isc500.png"
-              alt="logo"
-              class="w-12"
-            />
-            <h1 class="text-2xl font-bold text-blue-600 hidden sm:block">
-              ISC - Informatics Study Club
-            </h1>
-            <h1 class="text-2xl font-bold text-blue-600 sm:hidden">ISC</h1>
-          </div>
-        </a>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body class="p-8 bg-[#ECEFCA] box-border overflow-x-hidden ">
+<nav class=" fixed w-full z-50 top-0 start-0 bg-white/50 backdrop-blur-2xl">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="assets/img/icon/isc500.png" alt="" class="w-10">
+      <span class="self-center text-sm font-montheavy text-black">Informatics <br>Study Clubs</span>
+  </a>
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-montheavy">Dive In Now!</button>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul class="flex flex-col p-4 md:p-0 mt-4 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 font-nexalight font-black italic text-blue-800">
+      <li>
+        <a href="#home" class="block py-2 px-3 hover:bg-amber-200 p-1 rounded-sm delay-100 transition-all duration-300 ease-in-out hover:translate-y-1" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#about" class="block py-2 px-3 hover:bg-amber-200 p-1 rounded-sm delay-100 transition-all duration-300 ease-in-out hover:translate-y-1">About</a>
+      </li>
+      <li>
+        <a href="#divisions" class="block py-2 px-3 hover:bg-amber-200 p-1 rounded-sm delay-100 transition-all duration-300 ease-in-out hover:translate-y-1">Divisions</a>
+      </li>
+      <li>
+        <a href="#news" class="block py-2 px-3 hover:bg-amber-200 p-1 rounded-sm delay-100 transition-all duration-300 ease-in-out hover:translate-y-1">News</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+  <div id="home" class="font-nexaheavy text-center mb-24 md:mb-36 bg-gradient-to-br from-blue-500 to-blue-900 bg-clip-text text-transparent mt-40 ">
+    <img src="assets/img/matahari.png" alt="" class="absolute w-32 top-24 md:w-sm z-10 md:top-0 md:left-14">
+    <img src="assets/img/laptop.png" alt="" class="absolute w-36 right-0 top-52 md:w-sm md:top-64 md:right-24 z-10">
+    <h1 class="text-4xl md:text-9xl z-30">INFORMATICS</h1>
+    <h1 class="text-4xl md:text-9xl z-30">STUDY<span class="bg-gradient-to-br from-gray-700 to-gray-950 text-transparent bg-clip-text">CLUBS</span></h1>
+    <h1 class="text-blue-800 font-montlight text-xl md:text-3xl italic w-fit mx-auto p-3 rounded-2xl mt-12 font-black transition-all duration-300 ease-in-out hover:translate-y-1 md:hover:text-4xl hover:text-2xl ">"i see your skills"</h1>
+  </div>
 
-        <!-- Hamburger Menu Icon -->
-        <div class="sm:hidden flex items-center">
-          <button onclick="toggleMenu()" class="text-gray-600">
-            <i class="fas fa-bars text-2xl"></i>
-            <!-- Hamburger icon -->
-          </button>
+  <div class="mx-2 md:mx-16 " id="about">
+    <h1 class="text-2xl md:text-4xl font-montheavy bg-blue-950 w-fit p-3 rounded-tl-lg rounded-tr-lg text-white inset-shadow-sm">ABOUT US</h1>
+  </div>
+  <div class="mx-2 md:mx-16 shadow-xl/40 flex p-8 bg-blue-900 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl gap-8 md:flex-row flex-col-reverse">
+    <div class="h-full">
+      <h1 class="text-sm md:text-xl font-montlight font-black pt-3 text-white ">Informatics Study Club (ISC) Universitas Pamulang adalah komunitas dinamis yang berdedikasi untuk menjelajahi, mengembangkan, dan memajukan teknologi informasi. Kami berkomitmen untuk menciptakan lingkungan inovatif di mana para anggota dapat belajar, berkolaborasi, dan berbagi pengetahuan tentang dunia teknologi yang terus berkembang. Sebagai wadah pengembangan diri, ISC menyediakan berbagai program dan kegiatan yang dirancang untuk meningkatkan keterampilan teknis, kreativitas, dan kemampuan berpikir kritis para anggotanya. </h1>
+      <div class="flex md:flex-row flex-col gap-4 mt-8 text-black ">
+        <div class="bg-[#ffec70] rounded-2xl p-3 px-5 ">
+          <h1 class="text-lg font-montheavy mb-3">OUR VISIONS</h1>
+          <h1 class="text-sm font-montlight font-bold">Mewujudkan mahasiswa Unpam yang berkarakter kuat, dan siap bekerja serta berwirausaha dengan berbasis teknologi.</h1>
         </div>
-
-        <!-- Navigation Menu (hidden on mobile) -->
-        <nav class="hidden sm:flex" id="navbar">
-          <ul class="flex space-x-6">
-            <li>
-              <a href="#home" class="text-gray-600 hover:text-blue-600">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" class="text-gray-600 hover:text-blue-600"
-                >About
-              </a>
-            </li>
-            <li>
-              <a href="#bidang" class="text-gray-600 hover:text-blue-600"
-                >Bidang</a
-              >
-            </li>
-            <li>
-              <a href="#acara" class="text-gray-600 hover:text-blue-600"
-                >Acara</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Mobile Menu (hidden by default) -->
-        <nav
-          class="sm:hidden hidden absolute top-full left-0 right-0 bg-white shadow-lg"
-          id="mobile-menu"
-        >
-          <ul class="flex flex-col space-y-4 p-4">
-            <li>
-              <a href="#home" class="text-gray-600 hover:text-blue-600">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" class="text-gray-600 hover:text-blue-600"
-                >About
-              </a>
-            </li>
-            <li>
-              <a href="#bidang" class="text-gray-600 hover:text-blue-600"
-                >Bidang</a
-              >
-            </li>
-            <li>
-              <a href="#acara" class="text-gray-600 hover:text-blue-600"
-                >Acara</a
-              >
-            </li>
-            <li>
-              <a href="#contact" class="text-gray-600 hover:text-blue-600"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Home Section -->
-    <section
-      id="home"
-      class="relative pt-32 bg-cover bg-center text-white"
-      style="background-image: url('./assets/img/background.webp')"
-    >
-      <!-- Overlay Gradient -->
-      <div class="absolute inset-0 bg-black bg-opacity-75"></div>
-
-      <!-- Content -->
-      <div
-        class="container relative z-10 mx-auto flex flex-col md:flex-row items-center px-6 py-16"
-      >
-        <!-- Side Kiri -->
-        <div class="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0">
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">
-            Informatics Study Club
-          </h1>
-          <p class="text-lg mb-8">
-            Kelas tambahan untuk mengasah kemampuan Anda di bidang teknologi,
-            website, desain, dan data.
-          </p>
-          <a
-            href="https://forms.gle/n9YRADPQGzEa6PicA"
-            class="inline-flex items-center bg-blue-600 text-white py-3 px-6 rounded-full font-semibold hover:bg-blue-700 transition-all"
-          >
-            Get Started
-            <i class="fas fa-arrow-right ml-3"></i>
-          </a>
-        </div>
-
-        <!-- Side Kanan -->
-        <div class="w-full md:w-1/2">
-          <img
-            loading="lazy"
-            src="./assets/img/grafik.png"
-            alt="Kompetisi Informatika"
-            class="rounded-lg shadow-lg mx-auto"
-          />
+        <div class="bg-[#ffec70] rounded-2xl p-3 px-5 ">
+          <h1 class="text-lg font-montheavy mb-3">OUR MISSIONS</h1>
+          <h1 class="text-sm font-montlight font-bold">Menyediakan sarana dan prasarana yang interaktif dan komunikasi bagi mahasiswa. Meningkatkan hubungan yang sinergi dan positif baik di dalam maupun luar klub. Menjadikan ISC sebagai wadah pengembangan bagi mahasiswa untuk saling berkomunikasi dan berkolaborasi.</h1>
         </div>
       </div>
-    </section>
+    </div>
+    <img src="assets/img/kegiatan/13-09-24/IC/diskusi.jpg" alt="" class="w-full md:w-1/3 rounded-xl">
+  </div>
 
-    <!-- About Section -->
-    <section id="about" class="pt-20 pb-4 bg-gray-100">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col lg:flex-row items-center">
-          <!-- Text Content -->
-          <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
-            <h2 class="text-4xl font-bold text-blue-600 mb-4">Tentang Kami</h2>
-            <p class="text-lg text-gray-700 mb-6">
-              Informatics Study Club (ISC) Universitas Pamulang adalah komunitas
-              dinamis yang berdedikasi untuk menjelajahi, mengembangkan, dan
-              memajukan teknologi informasi. Kami berkomitmen untuk menciptakan
-              lingkungan inovatif di mana para anggota dapat belajar,
-              berkolaborasi, dan berbagi pengetahuan tentang dunia teknologi
-              yang terus berkembang.
-            </p>
-            <div class="flex flex-col lg:flex-row mb-6">
-              <!-- Visi Section -->
-              <div class="lg:w-1/2 mb-4 lg:mb-0 lg:pr-4">
-                <h3 class="text-xl font-semibold text-blue-600 mb-2">Visi</h3>
-                <p class="text-lg text-gray-700">
-                  Mewujudkan mahasiswa Unpam yang berkarakter kuat, dan siap
-                  bekerja serta berwirausaha dengan berbasis teknologi.
-                </p>
-              </div>
-
-              <!-- Misi Section -->
-              <div class="lg:w-1/2 lg:pl-4">
-                <h3 class="text-xl font-semibold text-blue-600 mb-2">Misi</h3>
-                <p class="text-lg text-gray-700 mb-2">
-                  Menyediakan sarana dan prasarana yang interaktif dan
-                  komunikasi bagi mahasiswa.
-                </p>
-                <p class="text-lg text-gray-700 mb-2">
-                  Meningkatkan hubungan yang sinergi dan positif baik di dalam
-                  maupun luar klub.
-                </p>
-                <p class="text-lg text-gray-700">
-                  Menjadikan ISC sebagai wadah pengembangan bagi mahasiswa untuk
-                  saling berkomunikasi dan berkolaborasi.
-                </p>
-              </div>
+  <div class="mx-2 md:mx-16 mt-20 md:mt-32 mb-10 bg-transparentflex gap-8 text-3xl font-montheavy " id="divisions">
+    <h1 class="text-4xl md:text-7xl text-gray-800 underline">DIVISION'S</h1>
+  </div>
+        <div class="mx-2 md:mx-16 flex md:flex-row flex-col gap-8 mb-10 w-fit">
+          <div class="bg-blue-900 rounded-2xl shadow-xl/40 w-fit p-8">
+            <div class="flex items-center pb-6 gap-5">
+              <svg aria-hidden="true" data-prefix="fal" data-icon="globe" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-globe fa-w-16 fa-7x w-7 md:w-18 text-white text-center "><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 55 18.2 100.2 57.9 125.7 109.1zM336 256c0 22.9-1.6 44.2-4.3 64H164.3c-2.7-19.8-4.3-41.1-4.3-64s1.6-44.2 4.3-64h167.4c2.7 19.8 4.3 41.1 4.3 64zM248 40c26.9 0 61.4 44.1 78.1 120H169.9C186.6 84.1 221.1 40 248 40zm-67.5 10.9c-19 26.8-34.2 64.6-43.2 109.1H54.8c25.5-51.2 70.7-90.9 125.7-109.1zM32 256c0-22.3 3.4-43.8 9.7-64h90.5c-2.6 20.5-4.2 41.8-4.2 64s1.5 43.5 4.2 64H41.7c-6.3-20.2-9.7-41.7-9.7-64zm22.8 96h82.5c9 44.4 24.1 82.2 43.2 109.1-55-18.2-100.2-57.9-125.7-109.1zM248 472c-26.9 0-61.4-44.1-78.1-120h156.2c-16.7 75.9-51.2 120-78.1 120zm67.5-10.9c19-26.8 34.2-64.6 43.2-109.1h82.5c-25.5 51.2-70.7 90.9-125.7 109.1zM363.8 320c2.6-20.5 4.2-41.8 4.2-64s-1.5-43.5-4.2-64h90.5c6.3 20.2 9.7 41.7 9.7 64s-3.4 43.8-9.7 64h-90.5z" class=""></path></svg>
+            <h1 class="text-xl md:text-3xl font-nexaheavy text-white">WEB <br>DEVELOPER</h1>
             </div>
+            
+            <p class="text-sm font-montlight text-white pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae. Fugit optio commodi, ipsam consectetur et deserunt nihil. Neque, eligendi!</p>
+            <a href="" class="font-montheavy text-white underline hover:bg-amber-200 rounded-sm delay-100 transition-all duration-300 ease-in-out hover:translate-x-1 hover:text-blue-900 p-2">Learn More <i class="fa-solid fa-link"></i></a>
           </div>
-
-          <!-- Image or Logo Section -->
-          <div class="lg:w-1/2 items-center justify-center flex">
-            <img
-              loading="lazy"
-              src="./assets/img/icon/isc500.png"
-              alt="Logo ISC"
-              class="h-128 w-128 mx-auto lg:mx-0 transition-transform duration-300 hover:scale-105"
-            />
+          <div class="bg-blue-900 rounded-2xl shadow-xl/40 w-fit p-8">
+            <div class="flex pb-4 items-center gap-5">
+              <i class="fa-brands fa-uikit text-2xl md:text-7xl text-white"></i>
+              <h1 class="text-xl md:text-3xl font-nexaheavy text-white">UI/UX <br>DESIGN</h1>
+            </div>
+            <p class="text-sm font-montlight text-white pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae. Fugit optio commodi, ipsam consectetur et deserunt nihil. Neque, eligendi!</p>
+            <a href="" class="font-montheavy text-white underline hover:bg-amber-200 rounded-sm delay-100 transition-all duration-300 ease-in-out hover:translate-x-1 hover:text-blue-900 p-2">Learn More <i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="bg-blue-900 rounded-2xl shadow-xl/40 w-fit p-8">
+            <div class="flex pb-4 items-center gap-5">
+              <i class="fa-solid fa-database text-2xl md:text-7xl text-white"></i>
+              <h1 class="text-xl md:text-3xl font-nexaheavy text-white">DATA <br>SCIENCE</h1>
+            </div>
+            <p class="text-sm font-montlight text-white pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae. Fugit optio commodi, ipsam consectetur et deserunt nihil. Neque, eligendi!</p>
+            <a href="" class="font-montheavy text-white underline hover:bg-amber-200 rounded-sm delay-100 transition-all duration-300 ease-in-out hover:translate-x-1 hover:text-blue-900 p-2">Learn More <i class="fa-solid fa-link"></i></a>
           </div>
         </div>
+  
+
+  <div class="mx-2 md:mx-16 flex justify-center pt-20" >
+    <h1 id="news" class="text-4xl font-montheavy bg-blue-900 w-fit p-3 rounded-tl-lg rounded-tr-lg text-white inset-shadow-sm">LATEST NEWS</h1>
+  </div>
+  <div class="mx-2 md:mx-16 shadow-xl/40 flex md:flex-row flex-col-reverse p-8 bg-blue-800 rounded-2xl gap-8 w-fit">
+    <div class="flex w-fit flex-col justify-between">
+      <h1 class="text-sm md:text-xl font-montlight font-black pt-3 text-white w-fit">Hello World! ISC Universitas Pamulang punya kabar-kabar seru yang lebih segar dari es teh manis di siang bolong loh! Mulai dari acara yang bikin otak ngebul sampai projek yang lahir dari begadang berjamaah semua ada di sini. Jangan sampai ketinggalan, ya! Karena teknologi terus maju, dan kami? ya kami ngejar lah!</h1>
+      <a href="" class="p-3 bg-[#ffec70] rounded-xl w-fit mt-4 font-montheavy text-black flex items-center gap-5 hover:translate-x-3 transition-all hover:bg-blue-950 hover:text-white">SEE ALL NEWS!  <svg aria-hidden="true" data-prefix="far" data-icon="arrow-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-arrow-circle-right fa-w-16 fa-7x w-5 justify-center items-center"><path fill="currentColor" d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zm448 0c0 110.5-89.5 200-200 200S56 366.5 56 256 145.5 56 256 56s200 89.5 200 200zM266.9 126.1l121.4 121.4c4.7 4.7 4.7 12.3 0 17L266.9 385.9c-4.7 4.7-12.3 4.7-17 0l-19.6-19.6c-4.8-4.8-4.7-12.5.2-17.2l70.3-67.1H140c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h160.8l-70.3-67.1c-4.9-4.7-5-12.4-.2-17.2l19.6-19.6c4.7-4.7 12.3-4.7 17 0z" class=""></path></svg></a>
+    </div>
+      
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="assets/img/kegiatan/03-10-24/ds.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
       </div>
-    </section>
-
-    <section id="struktur" class="pt-20 pb-4 bg-gray-100">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h1 class="text-3xl font-bold mb-6 text-blue-600">
-            Struktur Organisasi
-          </h1>
-        </div>
-
-        <!-- Struktur Organisasi -->
-        <div
-          class="flex flex-col lg:flex-row lg:justify-center lg:space-x-6 mb-6"
-        >
-          <!-- Ketua 1 -->
-          <div
-            class="bg-white p-6 rounded-lg shadow-lg mb-6 lg:w-1/4 text-center"
-          >
-            <img
-              loading="lazy"
-              src="./assets/img/pengurus/saldi.jpg"
-              alt="Ketua 1"
-              class="w-24 h-24 rounded-full mx-auto mb-4"
-            />
-            <h3 class="text-xl font-semibold text-blue-600">Saldy Saputra</h3>
-            <p class="text-gray-700">Ketua</p>
-          </div>
-
-          <!-- Wakil 1 -->
-          <div
-            class="bg-white p-6 rounded-lg shadow-lg mb-6 lg:w-1/4 text-center"
-          >
-            <img
-              loading="lazy"
-              src="./assets/img/pengurus/ali.jpg"
-              alt="Wakil 1"
-              class="w-24 h-24 rounded-full mx-auto mb-4"
-            />
-            <h3 class="text-xl font-semibold text-blue-600">Muchtar Ali</h3>
-            <p class="text-gray-700">Wakil Ketua</p>
-          </div>
-        </div>
-
-        <!-- Sekretaris 1 dan Bendahara 1 (wider container) -->
-        <div
-          class="flex flex-col lg:flex-row lg:justify-between lg:space-x-8 mb-6"
-        >
-          <!-- Sekretaris 1 -->
-          <div
-            class="bg-white p-6 rounded-lg shadow-lg mb-6 lg:w-1/2 text-center"
-          >
-            <img
-              loading="lazy"
-              src="./assets/img/pengurus/marsel.jpg"
-              alt="Sekretaris 1"
-              class="w-24 h-24 rounded-full mx-auto mb-4"
-            />
-            <h3 class="text-xl font-semibold text-blue-600">Marsella Waty</h3>
-            <p class="text-gray-700">Sekretaris</p>
-          </div>
-
-          <!-- Bendahara 1 -->
-          <div
-            class="bg-white p-6 rounded-lg shadow-lg mb-6 lg:w-1/2 text-center"
-          >
-            <img
-              loading="lazy"
-              src="./assets/img/pengurus/naira.jpg"
-              alt="Bendahara 1"
-              class="w-24 h-24 rounded-full mx-auto mb-4"
-            />
-            <h3 class="text-xl font-semibold text-blue-600">Naira Aqeela</h3>
-            <p class="text-gray-700">Bendahara</p>
-          </div>
-        </div>
-
-        <!-- Koordinator -->
-        <div class="flex flex-wrap justify-center gap-6 mb-6">
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center lg:w-1/3">
-            <img
-              loading="lazy"
-              src="./assets/img/pengurus/iqbal.jpg"
-              alt="Koordinator 1"
-              class="w-24 h-24 rounded-full mx-auto mb-4"
-            />
-            <h3 class="text-xl font-semibold text-blue-600">Iqbal Julyansah</h3>
-            <p class="text-gray-700">Koordinator Bidang</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center lg:w-1/3">
-            <img
-              loading="lazy"
-              src="./assets/img/pengurus/janu.jpg"
-              alt="Koordinator 2"
-              class="w-24 h-24 rounded-full mx-auto mb-4"
-            />
-            <h3 class="text-xl font-semibold text-blue-600">Janu Sari</h3>
-            <p class="text-gray-700">Koordinator Bidang</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center lg:w-1/3">
-            <img
-              loading="lazy"
-              src="./assets/img/pengurus/ardila.jpg"
-              alt="Koordinator 3"
-              class="w-24 h-24 rounded-full mx-auto mb-4"
-            />
-            <h3 class="text-xl font-semibold text-blue-600">Ardila</h3>
-            <p class="text-gray-700">Koordinator Bidang</p>
-          </div>
-        </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/img/kegiatan/03-10-24/ds.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
       </div>
-    </section>
-
-    <section id="logo-philosophy" class="pt-20 pb-4 bg-gray-100">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-blue-600 mb-4">
-            Filosofi Logo Kami
-          </h2>
-          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-            Kami dengan bangga mempersembahkan logo baru kami! Setiap elemen
-            dalam desain logo kami mencerminkan nilai dan semangat ISC. Logo ini
-            adalah representasi dari visi kami untuk inovasi, kolaborasi, dan
-            kemajuan teknologi. 💡🚀
-          </p>
-        </div>
-
-        <div class="flex flex-col lg:flex-row items-center">
-          <!-- Logo Image -->
-          <div class="lg:w-1/2 mb-8 lg:mb-0">
-            <img
-              loading="lazy"
-              src="./assets/img/icon/isc500.png"
-              alt="Logo ISC"
-              class="mx-auto mb-4"
-            />
-          </div>
-
-          <!-- Filosofi Section -->
-          <div class="lg:w-1/2 text-center lg:text-left">
-            <ul class="text-lg text-gray-700 space-y-3">
-              <li
-                class="flex flex-col lg:flex-row items-center lg:items-center space-x-0 lg:space-x-4"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/icon/i.png"
-                  alt="I"
-                  class="filosofi mx-auto lg:mx-0"
-                />
-                <span class="text-md leading-relaxed text-center lg:text-left">
-                  <strong class="text-blue-600">Huruf I</strong>
-                  sebagai singkatan dari
-                  <strong class="text-blue-600"
-                    >Information, Interaction, Innovation,</strong
-                  >
-                  dan
-                  <strong class="text-blue-600">Internet</strong>. Teknik
-                  Informatika berfokus pada pengelolaan, pengolahan, dan
-                  penyebaran informasi, sehingga huruf I menjadi simbol yang
-                  mewakili inti dari bidang ini.
-                </span>
-              </li>
-              <li
-                class="flex flex-col lg:flex-row items-center lg:items-center space-x-0 lg:space-x-4"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/icon/s.png"
-                  alt="S"
-                  class="filosofi mx-auto lg:mx-0"
-                />
-                <span class="text-md leading-relaxed text-center lg:text-left">
-                  <strong class="text-blue-600">Huruf S</strong>
-                  melambangkan perangkat lunak (<strong class="text-blue-600"
-                    >Software</strong
-                  >), dan sistem, baik itu sistem operasi, sistem informasi,
-                  atau sistem jaringan. Teknik Informatika mencakup desain,
-                  implementasi, dan manajemen sistem ini untuk memastikan mereka
-                  bekerja dengan efisien dan efektif.
-                </span>
-              </li>
-              <li
-                class="flex flex-col lg:flex-row items-center lg:items-center space-x-0 lg:space-x-4"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/icon/c.png"
-                  alt="C"
-                  class="filosofi mx-auto lg:mx-0"
-                />
-                <span class="text-md leading-relaxed text-center lg:text-left">
-                  <strong class="text-blue-600">Huruf C</strong>
-                  melambangkan pemrograman dan penulisan kode. Huruf C adalah
-                  inti dari istilah
-                  <strong class="text-blue-600">Computing</strong>
-                  yang mencakup seluruh spektrum Teknik Informatika, termasuk
-                  pemrosesan data, algoritma, dan operasi komputer.
-                </span>
-              </li>
-              <li
-                class="flex flex-col lg:flex-row items-center lg:items-center space-x-0 lg:space-x-4"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/icon/sidik.png"
-                  alt="Fingerprint"
-                  class="filosofi mx-auto lg:mx-0"
-                />
-                <span class="text-md leading-relaxed text-center lg:text-left">
-                  <strong class="text-blue-600">Sidik Jari</strong>
-                  memperlihatkan identitas unik pengguna dalam Teknik
-                  Informatika. Logo sidik jari sering dipakai dalam desain
-                  teknologi modern dan minimalis, mencerminkan inovasi dan
-                  estetika kontemporer.
-                </span>
-              </li>
-              <li
-                class="flex flex-col lg:flex-row items-center lg:items-center space-x-0 lg:space-x-4"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/icon/pcb.png"
-                  alt="PCB Design"
-                  class="filosofi mx-auto lg:mx-0"
-                />
-                <span class="text-md leading-relaxed text-center lg:text-left">
-                  <strong class="text-blue-600">Desain PCB</strong>
-                  menggambarkan jaringan yang menghubungkan sistem, seiring
-                  dengan perkembangan teknologi dan inovasi dalam Teknik
-                  Informatika.
-                </span>
-              </li>
-              <li
-                class="flex flex-col lg:flex-row items-center lg:items-center space-x-0 lg:space-x-4"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/icon/star.png"
-                  alt="Star"
-                  class="filosofi mx-auto lg:mx-0"
-                />
-                <span class="text-md leading-relaxed text-center lg:text-left">
-                  <strong class="text-blue-600">Bintang</strong>
-                  melambangkan inspirasi dan inovasi dalam Teknik Informatika,
-                  mendorong batasan teknologi, serta menciptakan solusi baru.
-                  Program-program yang diadakan oleh Informatics Study Club
-                  mencakup Business Digital, IoT Network Security, English
-                  Upskill, Computational Intelligence, dan Software Development.
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/img/kegiatan/03-10-24/ds.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
       </div>
-    </section>
-
-    <!-- Acara Section -->
-
-    <!-- Bidang Section -->
-    <section id="bidang" class="pt-20 pb-4">
-      <div class="container mx-auto">
-        <h3 class="text-3xl font-bold text-center mb-8">Bidang/Peminatan</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white p-6 shadow rounded-lg text-center">
-            <div class="text-blue-600 text-4xl mb-4">
-              <i class="fas fa-paint-brush"></i>
-              <!-- Icon UI/UX Designer -->
-            </div>
-            <h4 class="text-xl font-bold mb-2">UI/UX Designer</h4>
-            <p class="text-gray-600 mb-6">
-              Belajar men-desain sebuah aplikasi atau website menggunakan figma.
-            </p>
-            <a
-              href=""
-              class="bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700"
-              >Chat Koordinator</a
-            >
-          </div>
-          <div class="bg-white p-6 shadow rounded-lg text-center">
-            <div class="text-blue-600 text-4xl mb-4">
-              <i class="fas fa-laptop-code"></i>
-              <!-- Icon Web Development -->
-            </div>
-            <h4 class="text-xl font-bold mb-2">Web Development</h4>
-            <p class="text-gray-600 mb-6">
-              Belajar men-develop website, baik itu front-end maupun back-end.
-            </p>
-            <a
-              href=""
-              class="bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700"
-              >Chat Koordinator</a
-            >
-          </div>
-          <div class="bg-white p-6 shadow rounded-lg text-center">
-            <div class="text-blue-600 text-4xl mb-4">
-              <i class="fas fa-database"></i>
-              <!-- Icon Data Science -->
-            </div>
-            <h4 class="text-xl font-bold mb-2">Data Science</h4>
-            <p class="text-gray-600 mb-6">
-              Belajar mengelola data menggunakan beberapa bahasa pemrograman
-              seperti Python, R, dan SQL.
-            </p>
-            <a
-              href=""
-              class="bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700"
-              >Chat Koordinator</a
-            >
-          </div>
-        </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/img/kegiatan/03-10-24/ds.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
       </div>
-    </section>
-
-    <section id="acara" class="pt-20 pb-4 bg-gray-50">
-      <div class="container mx-auto px-4 pb-4">
-        <!-- Banner Section -->
-        <div class="relative">
-          <img
-            loading="lazy"
-            src="./assets/img/kegiatan/19-12-24/IC-Winner.png"
-            alt="Banner Acara"
-            class="w-full h-70 object-cover rounded-xl mt-2"
-          />
-          <div
-            class="absolute inset-0 bg-black rounded-xl bg-opacity-40 flex text-center items-center justify-center"
-          >
-            <h2 class="text-xl md:text-4xl font-bold text-white">
-              Pengumuman Pemenang Informatics Competition Di Seminar Nasional
-              Teknik Informatika
-            </h2>
-          </div>
-        </div>
-
-        <!-- Content Section -->
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card Item -->
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              loading="lazy"
-              src="./assets/img/kegiatan/09-12-24/seminar-ai.png"
-              alt="Acara 1"
-              class="w-full h-40 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-blue-600">
-                WorkShop AI - Teknik Informatika
-              </h3>
-              <p class="text-gray-700 mt-2">
-                Bergabunglah dengan WorkShop terbaru kami untuk membahas inovasi
-                teknologi terkini di bidang AI.
-              </p>
-              <a
-                href="https://www.instagram.com/stories/highlights/17926607366992342/"
-                class="block mt-4 text-blue-600 font-bold hover:underline"
-              >
-                Baca Selengkapnya →
-              </a>
-            </div>
-          </div>
-
-          <!-- Card Item -->
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              loading="lazy"
-              src="./assets/img/kegiatan/17-09-24/ic.jpg"
-              alt="Acara 2"
-              class="w-full h-40 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-blue-600">
-                Informatics Competition
-              </h3>
-              <p class="text-gray-700 mt-2">
-                Ikuti kompetisi informatik dan tunjukkan keahlianmu dalam
-                mengasah logika serta mencari solusi untuk suatu masalah.
-              </p>
-              <a
-                href="./Components/InformaticsCompetition.html"
-                class="block mt-4 text-blue-600 font-bold hover:underline"
-              >
-                Baca Selengkapnya →
-              </a>
-            </div>
-          </div>
-
-          <!-- Card Item -->
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              loading="lazy"
-              src="./assets/img/kegiatan/19-12-24/IC-Winner.png"
-              alt="Acara 3"
-              class="w-full h-40 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-blue-600">
-                Pengumuman Pemenang
-              </h3>
-              <p class="text-gray-700 mt-2">
-                Pengumuman Pemenang Informatics Competition Di Seminar Nasional
-                Teknik Informatika.
-              </p>
-              <a
-                href="./Components/InformaticsCompetition.html"
-                class="block mt-4 text-blue-600 font-bold hover:underline"
-              >
-                Baca Selengkapnya →
-              </a>
-            </div>
-          </div>
-        </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/img/kegiatan/03-10-24/ds.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
       </div>
+  </div>
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
 
-      <h1 class="text-center text-3xl font-bold mb-6 text-blue-600">
-        All About ISC
-      </h1>
-      <div class="container mx-auto">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/29-08-24/kelas/CI.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  Computational Intelligence | 29-08-24
-                </span>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/29-08-24/kelas/English.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  English Up Skill | 29-08-24
-                </span>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/29-08-24/kelas/Software.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  Software Development | 29-08-24
-                </span>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/13-09-24/IC/diskusi.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  Diskusi Persiapan Informatics Competition | 13-09-24
-                </span>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/13-09-24/info/bidang-baru.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  Bidang Baru ISC | 13-09-24
-                </span>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/17-09-24/ic.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  ISC Membuka Pendaftaran Lomba Informatics Competition |
-                  17-09-24
-                </span>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/21-09-24/bidang-baru/UI-UX.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  UI/UX Desainer | 21-09-24
-                </span>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/21-09-24/bidang-baru/Web.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  Web Development | 21-09-24
-                </span>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/21-09-24/bidang-baru/Data.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  Data Science | 21-09-24
-                </span>
-              </div>
-            </div>
-            <!-- Slide -->
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/26-09-24/Workshop/Data-Science.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  WorkShop Data Science Fundamental With DQLab | 26-09-24
-                </span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/03-10-24/web.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  Kelas Web Development | 03-10-24
-                </span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/03-10-24/ds.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  Kelas Data Science | 03-10-24
-                </span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-blue-500 text-white shadow-lg rounded-lg overflow-hidden relative"
-              >
-                <img
-                  loading="lazy"
-                  src="./assets/img/kegiatan/03-10-24/ui.jpg"
-                  alt="Slide 1"
-                  class="w-128 h-128 object-cover transition-transform duration-500"
-                />
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-                <span
-                  class="absolute bottom-0 left-0 right-0 p-4 text-center text-lg font-semibold text-white z-10"
-                  style="background: rgba(0, 0, 0, 0.5)"
-                >
-                  Kelas UI/UX | 03-10-24
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+  
 
-    <script>
-      const swiper = new Swiper(".swiper-container", {
-        loop: true, // Berulang
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-        speed: 1000,
-        direction: "horizontal",
-        slidesPerView: 1, // Menampilkan 1 slide
-        spaceBetween: 10, // Jarak antar slide
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 2, // Menampilkan 2 slide pada layar kecil
-            spaceBetween: 10,
-          },
-          768: {
-            slidesPerView: 3, // Menampilkan 3 slide pada layar besar
-            spaceBetween: 10,
-          },
-        },
-      });
-    </script>
+  <div class="text-gray-800 text-center mt-20">
+    <h1 class="text-sm font-bold font-nexalight italic">Award & Recognition</h1>
+    <h1 class="text-5xl font-nexaheavy">OUR AWARD'S</h1>
+    <hr class="border-1 mt-5 mx-2 md:mx-16 rounded-2xl">
+    <div class="mt-5 ">
+      <a href="" class="flex flex-row mx-2 md:mx-16 justify-between items-center hover:scale-105 transition-all duration-300 ease-in-out">
+        <h1 class="font-nexaheavy text-gray-500">2025</h1>
+        <h1 class="font-nexaheavy">Nama Award</h1>
+        <h1 class="font-nexalight italic font-black md:flex hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, pariatur.</h1>
+        <svg aria-hidden="true" data-prefix="far" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 svg-inline--fa fa-arrow-right fa-w-14 fa-7x"><path fill="currentColor" d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path></svg>
+      </a>
+    </div>
+    <hr class="border-1 mt-5 mx-2 md:mx-16 rounded-2xl">
+    <div class="mt-5 ">
+      <a href="" class="flex flex-row mx-2 md:mx-16 justify-between items-center hover:scale-105 transition-all duration-300 ease-in-out">
+        <h1 class="font-nexaheavy text-gray-500">2025</h1>
+        <h1 class="font-nexaheavy">Nama Award</h1>
+        <h1 class="font-nexalight italic font-black md:flex hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, pariatur.</h1>
+        <svg aria-hidden="true" data-prefix="far" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 svg-inline--fa fa-arrow-right fa-w-14 fa-7x"><path fill="currentColor" d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path></svg>
+      </a>
+    </div>
+    <hr class="border-1 mt-5 mx-2 md:mx-16 rounded-2xl">
+    <div class="mt-5 ">
+      <a href="" class="flex flex-row mx-2 md:mx-16 justify-between items-center hover:scale-105 transition-all duration-300 ease-in-out">
+        <h1 class="font-nexaheavy text-gray-500">2025</h1>
+        <h1 class="font-nexaheavy">Nama Award</h1>
+        <h1 class="font-nexalight italic font-black md:flex hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, pariatur.</h1>
+        <svg aria-hidden="true" data-prefix="far" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 svg-inline--fa fa-arrow-right fa-w-14 fa-7x"><path fill="currentColor" d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path></svg>
+      </a>
+    </div>
+    <hr class="border-1 mt-5 mx-2 md:mx-16 rounded-2xl">
+    <div class="mt-5 ">
+      <a href="" class="flex flex-row mx-2 md:mx-16 justify-between items-center hover:scale-105 transition-all duration-300 ease-in-out">
+        <h1 class="font-nexaheavy text-gray-500">2025</h1>
+        <h1 class="font-nexaheavy">Nama Award</h1>
+        <h1 class="font-nexalight italic font-black md:flex hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, pariatur.</h1>
+        <svg aria-hidden="true" data-prefix="far" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 svg-inline--fa fa-arrow-right fa-w-14 fa-7x"><path fill="currentColor" d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path></svg>
+      </a>
+    </div>
+    <hr class="border-1 mt-5 mx-2 md:mx-16 rounded-2xl">
+    <div class="mt-5 ">
+      <a href="" class="flex flex-row mx-2 md:mx-16 justify-between items-center hover:scale-105 transition-all duration-300 ease-in-out">
+        <h1 class="font-nexaheavy text-gray-500">2025</h1>
+        <h1 class="font-nexaheavy">Nama Award</h1>
+        <h1 class="font-nexalight italic font-black md:flex hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, pariatur.</h1>
+        <svg aria-hidden="true" data-prefix="far" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 svg-inline--fa fa-arrow-right fa-w-14 fa-7x"><path fill="currentColor" d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path></svg>
+      </a>
+    </div>
+  </div>
 
-    <!-- Floating WhatsApp Icon -->
-    <a
-      href="https://wa.me/6289629391222"
-      target="_blank"
-      class="fixed bottom-4 right-4 bg-green-500 text-white font-semibold py-1 px-2 rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center z-50"
-    >
-      <span class="hidden sm:block mr-2">Contact Us</span>
-      <i class="fab fa-whatsapp text-3xl"></i>
-    </a>
+  
+  
+  <div class="mx-2 md:mx-16 mt-20 rounded-2xl bg-white">
+    <h1 class="text-4xl font-montheavy bg-blue-900  p-3 rounded-tr-2xl rounded-tl-2xl text-white inset-shadow-sm w-full ">FAQ</h1>
+    <div class="mt-5 flex flex-col">
+      <details class=" rounded-lg p-4 ">
+        <summary class="font-montheavy text-lg text-blue-800 cursor-pointer">What is Informatics Study Club (ISC)?</summary>
+        <p class="mt-2 text-sm font-montlight text-black font-bold">ISC is a dynamic community at Universitas Pamulang dedicated to exploring, developing, and advancing information technology.</p>
+      </details>
+      <details class=" rounded-lg p-4 ">
+        <summary class="font-montheavy text-lg text-blue-800 cursor-pointer">How can I join ISC?</summary>
+        <p class="mt-2 text-sm font-montlight text-black font-bold">You can join ISC by contacting us through our official channels or visiting our campus office.</p>
+      </details>
+      <details class=" rounded-lg p-4 ">
+        <summary class="font-montheavy text-lg text-blue-800 cursor-pointer">What activities does ISC organize?</summary>
+        <p class="mt-2 text-sm font-montlight text-black font-bold">ISC organizes workshops, seminars, collaborative projects, and competitions related to technology and innovation.</p>
+      </details>
+      <details class=" rounded-lg p-4 ">
+        <summary class="font-montheavy text-lg text-blue-800 cursor-pointer">Who can join ISC?</summary>
+        <p class="mt-2 text-sm font-montlight text-black font-bold">ISC is open to all students of Universitas Pamulang who are passionate about technology and innovation.</p>
+      </details>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-6">
-      <div class="container mx-auto px-6">
-        <!-- Grid Footer -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 text-center md:text-left"
-        >
-          <!-- About Us -->
-          <div>
-            <h5 class="text-lg font-bold mb-2">About Us</h5>
-            <p class="text-gray-400">
-              Informatics Study Club (ISC) Universitas Pamulang adalah komunitas
-              yang berfokus pada eksplorasi, pengembangan, dan inovasi teknologi
-              informasi.
-            </p>
-          </div>
+  <div class="mx-2 md:mx-16 mt-20 justify-center bg-[#ffec70] rounded-tl-2xl rounded-tr-2xl shadow-2xl flex md:flex-row flex-col p-8  md:text-3xl text-sm font-montheavy text-white text-center items-center">
+    <h1 class="text-black">WE NEED YOU BECAUSE<br></h1>
+    <h1 class="ml-3 italic text-white bg-blue-800 p-2 md:p-4 rounded-2xl hover:bg-green-700 hover:text-5xl transition-all delay-100 ease-in-out">I SEE YOUR SKILLS</h1>
+  </div>
+  <div class="flex mx-2 md:mx-16">
+    <div class="w-full  justify-center bg-blue-800 rounded-bl-2xl  shadow-2xl flex p-8 gap-8 md:text-3xl text-lg font-montheavy text-white text-center">
+      <h1>CONTACT US</h1>
+    </div>
+    <div class="justify-center bg-green-500 rounded-br-2xl p-8 gap-8 md:text-3xl text-lg font-montheavy text-white text-center flex flex-col hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 ease-in-out">
+      <a href="" class="hover:w-full transition-all delay-100 ease-in-out animate-bounce ">HERE!!!</a>
+    </div>
+  </div>
 
-          <!-- Contact Us -->
-          <div>
-            <h5 class="text-lg font-bold mb-2">Contact Us</h5>
-            <ul class="text-gray-400 space-y-2">
-              <li>
-                <a
-                  href="mailto:isc.unpam1@gmail.com"
-                  class="hover:text-blue-400 transition-colors"
-                >
-                  📧 isc.unpam1@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/6289629391222"
-                  class="hover:text-blue-400 transition-colors"
-                >
-                  📞 +62 896-2939-1222
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Sosial Media -->
-          <div>
-            <h5 class="text-lg font-bold mb-2">Follow Us</h5>
-            <div class="flex justify-center md:justify-start space-x-4">
-              <a
-                href="https://github.com/dhamarPutra/"
-                target="_blank"
-                class="text-gray-400 hover:text-white transition-colors"
-              >
-                <i class="fab fa-github text-2xl"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/isc.unpam/"
-                target="_blank"
-                class="text-gray-400 hover:text-pink-500 transition-colors"
-              >
-                <i class="fab fa-instagram text-2xl"></i>
-              </a>
-              <a
-                href="https://www.tiktok.com/@randomisc1"
-                target="_blank"
-                class="text-gray-400 hover:text-cyan-300 transition-colors"
-              >
-                <i class="fab fa-tiktok text-2xl"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Garis Pembatas -->
-        <hr class="border-gray-500 my-6" />
-
-        <!-- Copyright -->
-        <div class="text-center text-gray-300">
-          <p>&copy; 2024 ISC. All rights reserved.</p>
-        </div>
-      </div>
+  <div class="mx-2 md:mx-16 mt-20 rounded-2xl shadow-2xl flex gap-8 text-sm md:text-3xl font-montheavy text-white">
+    <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 rounded-2xl bg-white text-black">
+      <aside>
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          class="fill-current">
+          <path
+            d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+        </svg>
+        <p>
+          Informatics Study Clubs.
+          <br />
+          Design and Development by <span class="text-blue-800"><a href="" class="underline">Fikri div.WEBDEV</a></span>
+          <br>
+          Jl. Raya Puspitek No. 1, Pamulang, Tangerang Selatan, Banten 15418
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">DIVISIONS</h6>
+        <a class="link link-hover">Web Development</a>
+        <a class="link link-hover">UI&UX Design</a>
+        <a class="link link-hover">Data Science</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">ORGANIZATION</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
     </footer>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
 </html>
